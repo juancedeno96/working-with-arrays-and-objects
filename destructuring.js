@@ -23,7 +23,10 @@ var carDetails = {
 
 //Code Here
 
-
+const {color} = carDetails;
+const {make} = carDetails;
+const {model} = carDetails;
+const {year} = carDetails;
 
 ////////// PROBLEM 2 //////////
 
@@ -35,7 +38,9 @@ var carDetails = {
 
 function greeting( obj ) {
   //Code Here
-  
+  const {title} = obj;
+  const {firstName} = obj;
+  const {lastName} = obj
   // Do not edit the code below.
   return 'Hello, ' + title + ' ' + firstName + ' ' + lastName + '!';
   // Do not edit the code above.
@@ -54,6 +59,25 @@ function greeting( obj ) {
 */
 
 //Code Here
+obj = {
+  utah: 2,
+  california: 10,
+  texas: 5,
+  arizona: 2
+}
+
+let totalPopulation = (obj) => {
+ 
+  let {utah} =obj;
+  let {california}  = obj;
+  let {texas} = obj;
+  let {arizona} = obj;
+ return utah+california+arizona+texas
+  }
+  
+  
+
+   
 
 
 
@@ -68,7 +92,18 @@ function greeting( obj ) {
 */
 
 //Code Here
-
+obj = {
+  carb: 'bread',
+  fat: 'avocado',
+  protein: 'chicken'
+}
+function ingredients(obj) {
+  let array = []
+  let {carb} = obj;
+  let {fat} = obj;
+  let {protein} = obj
+  return array = [carb, fat, protein]
+}
 
 
 ////////// PROBLEM 5 //////////
@@ -85,10 +120,12 @@ function greeting( obj ) {
   Find the smallest number of the three and return that number.
 */
 
-//Code Here
+//Code Here 
+function largeNumbers({first, second, third}) {
 
+  return Math.min(first, second, third)
 
-
+}
 ////////// PROBLEM 6 //////////
 
 /*
@@ -98,5 +135,3 @@ function greeting( obj ) {
 */
 
 //Code Here
-
-
