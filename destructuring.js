@@ -133,5 +133,24 @@ function largeNumbers({first, second, third}) {
   The object properties will be named a, b, and c and their values will be arrays of numbers.
   Find the longest array and return that array.
 */
-
+let numObj = {
+  a : [2,4,5,4,3,4,3,23,3],
+  b: [3,4,5,6,3,5],
+  c: [4,5]
+}
 //Code Here
+function numberGroups({a,b,c}) {
+  array = []
+  for (let key in {a, b, c} ) {
+     array.push({a,b,c}[key])
+      console.log(array)
+  }
+  for (let i = 0; i<array.length; i++) {
+    if (array[i].length === Math.max(a.length, b.length, c.length)) {
+      return array[i]
+    }
+     
+    
+    
+} }
+  numberGroups(numObj)
